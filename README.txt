@@ -7,7 +7,7 @@
 https://currency-convert-1.herokuapp.com/convert/<original currency>/<target currency>/<input value>
 
 For example,
-https://currency-convert-1.herokuapp.com/convert/USD/EUR/1.0
+https://currency-convert-1.herokuapp.com/convert/USD/EUR/1.0 
 https://currency-convert-1.herokuapp.com/convert/eur/jpy/2
 
 3. The expected output should be:
