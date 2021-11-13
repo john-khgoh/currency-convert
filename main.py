@@ -36,7 +36,7 @@ def update_rate():
     
     return("Rate updated!")
 
-#Convert 
+#Convert from one currency to another
 @app.get('/convert/{currency}/{target_currency}/{input}')
 def convert(currency:str,target_currency:str,input:float):
     
