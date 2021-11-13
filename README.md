@@ -3,7 +3,7 @@
 1. To use the web API directly, you can visit the following url: https://currency-convert-1.herokuapp.com/  
 
 2. The input format is as follows:  
-https://currency-convert-1.herokuapp.com/convert/ <original currency> / <target currency> / <input value> 
+https://currency-convert-1.herokuapp.com/convert/original_currency/target_currency/input_value
 
 For example,  
 https://currency-convert-1.herokuapp.com/convert/USD/EUR/1.0  
