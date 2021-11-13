@@ -1,4 +1,4 @@
-## Web API  
+## Web API conversion
 
 1. To use the web API directly, you can visit the following url: https://currency-convert-1.herokuapp.com/  
 
@@ -15,6 +15,11 @@ https://currency-convert-1.herokuapp.com/convert/eur/jpy/2
 
 Note: Heroku, the web hosting service requires all free applications to sleep for 6 hours every day.  
 The web API should be up and running between 8am - 2am CET. Should you encounter errors, please contact jkh.goh@gmail.com.
+
+## Web API update
+
+The currency exchange rate can be updated from an external site using:
+https://currency-convert-1.herokuapp.com/update-rate
 
 ## CLI using the web API  
 
