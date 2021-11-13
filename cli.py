@@ -31,10 +31,17 @@ else:
 
 filepath = path + separator + file
 
+#Test the connection to the URL to ensure connectivity
+try:
+    r = http.request('GET',website)
+except:
+    raise Exception("Unable to access URL")
+
 #Reads one line at a time without storing it in memory. It should be able to handle very large JSON files.
 with open(filepath) as f:
     for line in f:
         cnt += 1
+
         try:
             data = json.loads(line)
             value = data['value']
