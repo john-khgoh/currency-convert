@@ -36,4 +36,4 @@ def convert(currency:str,target_currency:str,input:float):
         raise HTTPException(status_code=404, detail='%s not in target currency list' %target_currency)
         
     value = input * rate[currency][target_currency]
-    return {'value':'{:.2f}'.format(value),'currency':target_currency}
+    return {'value':'{:.2f}'.format(value),'currency':target_currency.upper()}
