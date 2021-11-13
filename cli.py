@@ -6,7 +6,7 @@ from os import getcwd, name
 path = getcwd()
 http = urllib3.PoolManager()
 os = name
-website = '127.0.0.1:8008'
+#website = '127.0.0.1:8008'
 #port = 8008
 currency = 'usd'
 target_currency = 'usd'
