@@ -4,9 +4,9 @@ from fastapi.encoders import jsonable_encoder
 app = FastAPI()
 
 rate = {
-    'usd' : {'usd':1.0,'eur':2.0,'jpy':3.0},
-    'eur' : {'usd':4.0,'eur':1.0,'jpy':5.0},
-    'jpy' : {'usd':6.0,'eur':7.0,'jpy':1.0}
+    'usd' : {'usd':1.0,'eur':0.87,'jpy':113.93},
+    'eur' : {'usd':1.15,'eur':1.0,'jpy':130.34},
+    'jpy' : {'usd':0.0088,'eur':0.0077,'jpy':1.0}
 }
 
 @app.get('/convert/{currency}/{target_currency}/{input}')
