@@ -18,7 +18,7 @@ The web API should be up and running between 8am - 2am CET. Should you encounter
 
 ## Web API update
 
-The currency exchange rate can be updated from an external site using:
+The currency exchange rate can be updated from an external site using:  
 https://currency-convert-1.herokuapp.com/update-rate
 
 ## CLI using the web API  
