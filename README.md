@@ -33,5 +33,5 @@ python cli.py --file "input.json" --target-currency EUR
 2. Run the following command in command prompt (Windows) or terminal (*nix):  
 uvicorn main:app --reload --workers 1 --host 0.0.0.0 --port 8008  
 
-3. In another command prompt or terminal, run the batch file using the following command. Change the target currency and input file, as required.
+3. In another command prompt or terminal, run the batch file using the following command. Change the target currency and input file, as required.  
 python cli.py --file "input.json" --target-currency EUR
