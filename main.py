@@ -6,9 +6,6 @@ import json
 http = urllib3.PoolManager()
 app = FastAPI()
 url = 'http://api.currencylayer.com/live'
-access_key ='a2f977ecb7d73dbb82f287eaab8f4666'
-format = 1
-source_url= url + '?' + 'access_key' + '=' + access_key + '&' + 'format' + '=' + str(format)
 
 rate = {
     'usd' : {'usd':1.0,'eur':0.87,'jpy':113.93},
@@ -17,9 +14,12 @@ rate = {
 }
 
 #Updates the currency exchange rate from a publicly available service
-@app.get('/update-rate')
-def update_rate():
-    try:    
+#The access key is needed to update the exchange rates
+@app.get('/update-rate/{access_key}')
+def update_rate(access_key:str):
+    try:
+        format = 1
+        source_url= url + '?' + 'access_key' + '=' + str(access_key) + '&' + 'format' + '=' + str(format)
         r = http.request('GET',source_url)
     except:
         raise HTTPException(status_code=502, detail='Unable to access data source server')
